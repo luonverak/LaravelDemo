@@ -19,8 +19,10 @@
                 Home Page
             @endif
         </h1>
-        <a href="/add-student" class="btn btn-primary float-end">
-            Add student
+        <a href="/add-student">
+            @if (request()->route()->uri !== 'add-student')
+                <button class="btn btn-primary float-end">Add Student</button>
+            @endif
         </a>
     </div>
     @yield('content')

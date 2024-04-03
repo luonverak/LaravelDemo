@@ -11,18 +11,21 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>name</td>
-                <td>gender</td>
-                <td>
-                    <img src="/images/user-account.jpeg" width="100" height="100" style="object-fit: cover" alt="">
-                </td>
-                <td>
-                    <button class="btn btn-warning">Update</button>
-                    <button class="btn btn-danger">Delete</button>
-                </td>
-            </tr>
+            @foreach ($student as $stu)
+                <tr>
+                    <td>{{ $stu->id }}</td>
+                    <td>{{ $stu->name }}</td>
+                    <td>{{ $stu->gender }}</td>
+                    <td>
+                        <img src="images/{{ $stu->profile }}" width="120" height="120" style="object-fit: cover"
+                            alt="{{ $stu->profile }}">
+                    </td>
+                    <td>
+                        <button class="btn btn-warning">Update</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection
