@@ -1,15 +1,12 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use StudentService;
+
 
 class StudentController extends Controller
 {
-
 
     public function getStudent()
     {
@@ -34,6 +31,20 @@ class StudentController extends Controller
                         'profile' => $fileName,
                     ]
                 );
+                if ($student) {
+                    return redirect('/');
+                }
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+    public function deleteStudent(Request $request)
+    {
+        try {
+            if ($request->get('btnDelete') == 'Delete') {
+                $studentID = $request->get('stu_id');
+                $student = Student::find($studentID)->delete();
                 if ($student) {
                     return redirect('/');
                 }
