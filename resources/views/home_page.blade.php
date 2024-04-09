@@ -22,7 +22,7 @@
                     </td>
                     <td>
                         <form action="/delete-student" method="post">
-                            <button class="btn btn-warning">Update</button>
+                            <a href="/update-student/{{ $stu->id }}" class="btn btn-warning">Update</a>
                             @csrf
                             <input type="hidden" name="stu_id" value="{{ $stu->id }}">
                             <button type="submit" name="btnDelete" value="Delete" class="btn btn-danger">Delete</button>

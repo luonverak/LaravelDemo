@@ -17,6 +17,33 @@ class StudentController extends Controller
     {
         return view('add_page');
     }
+
+    public function updatePage($id){
+        $student = Student::where('id',$id)->first();
+        return view('update_page',['student'=>$student]);
+    }
+
+    public function updateData(Request $request){
+        $id   = $request->input('hidden_id');
+        $file = $request->file('profile');
+        if($file!=""){
+            $fileName = rand(1, 1000) . '-' . $file->getClientOriginalName();
+            $file->move('images', $fileName);
+        }else{
+            $fileName = $request->get('old_profile');
+        }
+        $student = Student::where('id',$id)->update(
+            [
+                'name' => $request->get('txt_name'),
+                'gender' => $request->get('gender'),
+                'profile' => $fileName,
+            ]
+        );
+        if($student){
+            return redirect('/');
+        }
+    }
+
     public function addStudent(Request $request)
     {
         try {

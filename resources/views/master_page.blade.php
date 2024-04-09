@@ -15,13 +15,17 @@
         <h1 class="text-light">
             @if (request()->route()->uri === 'add-student')
                 Add Page
+            @elseif (request()->route()->uri === 'update-student')
+                Update Page
             @else
                 Home Page
             @endif
         </h1>
         <a href="/add-student">
-            @if (request()->route()->uri !== 'add-student')
+            @if (request()->route()->uri == '/')
                 <button class="btn btn-primary float-end">Add Student</button>
+            @endif
+            @if (request()->route()->uri == 'update-student')
             @endif
         </a>
     </div>
