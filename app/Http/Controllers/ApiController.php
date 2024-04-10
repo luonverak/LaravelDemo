@@ -35,7 +35,7 @@ class ApiController extends Controller
                 [
                     'name' => $request->name,
                     'gender' => $request->gender,
-                    'profile' => $fileName,
+                    'profile' => url("images/$fileName"),
                 ]
             );
             if ($student) {

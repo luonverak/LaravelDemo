@@ -17,7 +17,7 @@
                     <td>{{ $stu->name }}</td>
                     <td>{{ $stu->gender }}</td>
                     <td>
-                        <img src="images/{{ $stu->profile }}" width="120" height="120" style="object-fit: cover"
+                        <img src="{{ $stu->profile }}" width="120" height="120" style="object-fit: cover"
                             alt="{{ $stu->profile }}">
                     </td>
                     <td>
