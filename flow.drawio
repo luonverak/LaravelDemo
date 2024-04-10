@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="ydy5OeZvf0IlJdrrBb0l" name="Page-1">
-        <mxGraphModel dx="937" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+        <mxGraphModel dx="688" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -29,32 +29,32 @@
         </mxGraphModel>
     </diagram>
     <diagram id="7bLre35rI-7-hH2jiHZQ" name="Page-2">
-        <mxGraphModel dx="1199" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+        <mxGraphModel dx="688" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="gOYpgk7J0P-6efoME34U-1" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-1" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
                     <mxGeometry x="120" y="160" width="140" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="gOYpgk7J0P-6efoME34U-1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="gOYpgk7J0P-6efoME34U-1" vertex="1">
                     <mxGeometry x="40" y="60" width="60" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-3" value="&lt;font size=&quot;3&quot;&gt;backend&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-3" value="&lt;font size=&quot;3&quot;&gt;backend&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="80" y="130" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-5" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-5" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
                     <mxGeometry x="420" y="160" width="140" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-6" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;View&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="gOYpgk7J0P-6efoME34U-5">
+                <mxCell id="gOYpgk7J0P-6efoME34U-6" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;View&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="gOYpgk7J0P-6efoME34U-5" vertex="1">
                     <mxGeometry x="30" y="60" width="80" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-7" value="&lt;font size=&quot;3&quot;&gt;frontend&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-7" value="&lt;font size=&quot;3&quot;&gt;frontend&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="500" y="120" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pick up Laravel&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pick up Laravel&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="135" y="310" width="110" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="gOYpgk7J0P-6efoME34U-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pick up React&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="gOYpgk7J0P-6efoME34U-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pick up React&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="435" y="310" width="110" height="30" as="geometry"/>
                 </mxCell>
             </root>
