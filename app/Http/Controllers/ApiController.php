@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ApiController extends Controller
 {
@@ -82,6 +83,28 @@ class ApiController extends Controller
                 return response()->json([
                     'status' => 'No data',
                     'message' => 'Student not found'
+                ]);
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+    public function deleteStudent($id)
+    {
+        try {
+            $student = Student::where('id', $id)->delete();
+            // $student = DB::delete('DELETE FROM student WHERE id=:id ', [
+            //     'id' => $id,
+            // ]);
+            if ($student) {
+                return response()->json([
+                    'status' => 'Delete success',
+                    'message' => 'Student deleted'
+                ]);
+            } else {
+                return response()->json([
+                    'status' => 'Delete unsuccess',
+                    'message' => 'Try again'
                 ]);
             }
         } catch (\Throwable $th) {
